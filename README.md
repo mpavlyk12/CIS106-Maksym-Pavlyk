@@ -1,1 +1,2 @@
 # CIS106-Maksym-Pavlyk
+Hello, my name is Maksym. I've always been fascinated by programming and the idea of creating something with just a code. I have zero experince in this field and this is my first course ever in this field. I hope i can gain more understanding of the topic throughout the semester. I want to stay at Harper for 2 years and transfer after that, I have no idea where i want to trasnfer yet but I have some options in my mind. 
