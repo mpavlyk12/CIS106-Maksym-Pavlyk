@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 03:11:13 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMDktMzA7MDM6MDE6MTIgUE07Mjg5MA=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMDktMzA7MDM6MTE6MTMgUE07MTszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="lastname"/>
+            <declare name="credithours" type="Real" array="False" size=""/>
+            <assign variable="credithour" expression="250"/>
+            <assign variable="labfee" expression="100"/>
+            <input variable="credithours"/>
+            <input variable="labfee"/>
+            <assign variable="tuition" expression="(credithours * 250) + labfee"/>
+            <output expression="&quot;Your tuition is $&quot; &amp;tuition &amp;lastname" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

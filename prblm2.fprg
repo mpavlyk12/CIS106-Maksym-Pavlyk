@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 02:53:14 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMDktMzA7MDE6MjU6NTggUE07MjkwNA=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMDktMzA7MDI6NTM6MTQgUE07MTszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="lastname"/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="payrate" type="Real" array="False" size=""/>
+            <input variable="hours"/>
+            <input variable="payrate"/>
+            <assign variable="grosspay" expression="hours*payrate"/>
+            <output expression="&quot;Your grosspay is $&quot; &amp;grosspay&amp;lastname" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
