@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 04:07:00 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDM6NTg6NDQgUE07MjkwNA=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDQ6MDc6MDAgUE07MTsyOTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="undivided" type="Real" array="False" size=""/>
+            <declare name="ppl" type="Real" array="False" size=""/>
+            <declare name="divided" type="Real" array="False" size=""/>
+            <input variable="undivided"/>
+            <input variable="ppl"/>
+            <assign variable="divided" expression="undivided/ppl"/>
+            <output expression="&quot;Each of you will receive &quot; &amp;divided" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 04:24:00 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDQ6MTc6MzAgUE07Mjg5NQ=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDQ6MjQ6MDAgUE07MTsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="pie" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <assign variable="pie" expression="3.174"/>
+            <assign variable="area" expression="pie * (radius*radius)"/>
+            <assign variable="perimeter" expression="2 * pie * radius"/>
+            <output expression="&quot;Your area is &quot; &amp;area" newline="True"/>
+            <output expression="&quot;Your perimeter is &quot; &amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

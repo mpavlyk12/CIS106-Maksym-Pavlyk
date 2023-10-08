@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 03:58:42 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDM6NDE6MDUgUE07Mjg5Mw=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDM6NTg6NDIgUE07MTszMDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="symbol" type="String" array="False" size=""/>
+            <declare name="number" type="Real" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="invested" type="Real" array="False" size=""/>
+            <input variable="symbol"/>
+            <input variable="number"/>
+            <input variable="cost"/>
+            <assign variable="invested" expression="cost * number"/>
+            <output expression="&quot;Stock &quot; &amp;symbol" newline="True"/>
+            <output expression="&quot; You have invested &quot; &amp;invested" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

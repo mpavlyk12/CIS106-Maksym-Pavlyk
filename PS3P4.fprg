@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 04:17:26 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDQ6MDc6MDIgUE07Mjg5Mw=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMDg7MDQ6MTc6MjYgUE07MTszMDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Make" type="String" array="False" size=""/>
+            <declare name="Model" type="String" array="False" size=""/>
+            <declare name="MSRP" type="Real" array="False" size=""/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <declare name="amountoff" type="Real" array="False" size=""/>
+            <declare name="finalprice" type="Real" array="False" size=""/>
+            <input variable="Make"/>
+            <input variable="Model"/>
+            <input variable="MSRP"/>
+            <input variable="discount"/>
+            <assign variable="amountoff" expression="MSRP * discount"/>
+            <assign variable="finalprice" expression="MSRP - amountoff"/>
+            <output expression="&quot;You save &quot; &amp;amountoff" newline="True"/>
+            <output expression="&quot;Your discounted final price is &quot;&amp;finalprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
