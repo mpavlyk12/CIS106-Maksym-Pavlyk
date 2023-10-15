@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 06:06:02 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMTU7MDY6MDI6MTAgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMTU7MDY6MDY6MDIgUE07MTszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="purchase" type="Real" array="False" size=""/>
+            <declare name="current" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <input variable="purchase"/>
+            <input variable="current"/>
+            <input variable="quantity"/>
+            <assign variable="value" expression="(current-purchase) *quantity"/>
+            <output expression="&quot;Your stock value is&quot; &amp;value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

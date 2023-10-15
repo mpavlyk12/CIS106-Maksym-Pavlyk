@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 06:02:08 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMTU7MDU6Mzg6MDIgUE07Mjg5Ng=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTAtMTU7MDY6MDI6MDggUE07MjszMDAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="exam1" type="Real" array="False" size=""/>
+            <declare name="exam2" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="exam1"/>
+            <input variable="exam2"/>
+            <assign variable="total" expression="(exam1*(60/100)) + (exam2*(40/100))"/>
+            <output expression="&quot;Your total is&quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
