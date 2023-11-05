@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-04 07:03:56 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMDQ7MDY6NDM6NDggUE07MjkwMg=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMDQ7MDc6MDM6NTYgUE07MjszMDA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <declare name="totalex1" type="Real" array="False" size=""/>
+            <assign variable="totalex1" expression="0"/>
+            <assign variable="counter" expression="0"/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <declare name="avgex1" type="Real" array="False" size=""/>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <declare name="hrs" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to continue (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <assign variable="counter" expression="counter + 1"/>
+                <output expression="&quot;Enter last name&quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter hours worked&quot;" newline="True"/>
+                <input variable="hrs"/>
+                <output expression="&quot;Enter rate of pay&quot;" newline="True"/>
+                <input variable="pay"/>
+                <assign variable="gross" expression="hrs * pay"/>
+                <assign variable="totalex1" expression="totalex1 + pay"/>
+                <output expression="&quot;Worker&quot; &amp;lastname &amp; &quot;has gross payment of of&quot; &amp; gross" newline="True"/>
+            </while>
+            <output expression="&quot;Total number of workers&quot; &amp; counter" newline="True"/>
+            <assign variable="avgex1" expression="totalex1/counter"/>
+            <output expression="&quot;Average gross pay is &quot; &amp; avgex1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
