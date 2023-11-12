@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 01:54:00 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTI7MDE6MTY6NTggUE07Mjg5Nw=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTI7MDE6NTQ6MDAgUE07MjsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="intamt" type="Real" array="False" size=""/>
+            <declare name="year" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="endbal" type="Real" array="False" size=""/>
+            <declare name="totalint" type="Real" array="False" size=""/>
+            <assign variable="totalint" expression="0.0"/>
+            <input variable="response"/>
+            <while expression="response== &quot;Yes&quot;">
+                <output expression="&quot;enter number&quot;" newline="True"/>
+                <input variable="p"/>
+                <for variable="sequence" start="1" end="20" direction="inc" step="1">
+                    <assign variable="intamt" expression="p * rate"/>
+                    <assign variable="endbal" expression="p + intamt"/>
+                    <output expression="year &amp;   p   &amp; endbal" newline="True"/>
+                    <assign variable="totalint" expression="totalint + intamt"/>
+                    <assign variable="p" expression="endbal"/>
+                </for>
+                <output expression="&quot;Do another calculation(Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <output expression="&quot;number&quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

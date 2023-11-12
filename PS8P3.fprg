@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 02:00:36 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTI7MDE6MTY6NTggUE07Mjg5Nw=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTI7MDI6MDA6MzYgUE07MjsyOTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="intamt" type="Real" array="False" size=""/>
+            <declare name="year" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="endbal" type="Real" array="False" size=""/>
+            <declare name="totalint" type="Real" array="False" size=""/>
+            <declare name="bonus" type="Real" array="False" size=""/>
+            <assign variable="totalint" expression="0.0"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;Do you want to calculate bonus(Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response== &quot;Yes&quot;">
+                <output expression="&quot;Enter salary&quot;" newline="True"/>
+                <input variable="p"/>
+                <output expression="&quot;Enter name&quot;" newline="True"/>
+                <input variable="name"/>
+                <if expression="p&gt;=100000">
+                    <then>
+                        <assign variable="rate" expression="0.20"/>
+                    </then>
+                    <else>
+                        <if expression="p=50000">
+                            <then>
+                                <assign variable="rate" expression="0.15"/>
+                            </then>
+                            <else>
+                                <assign variable="rate" expression="0.10"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="bonus" expression="p * rate"/>
+                <output expression="&quot;Do another calculation(Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <output expression="p" newline="True"/>
+            <output expression="rate" newline="True"/>
+            <output expression="bonus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
