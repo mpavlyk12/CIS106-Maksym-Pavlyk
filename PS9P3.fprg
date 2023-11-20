@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-19 05:53:38 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTk7MDU6NTA6MzQgUE07MjkwMA=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTk7MDU6NTM6MzggUE07MTszMDE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="city" type="String" array="False" size=""/>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <declare name="mpg" type="Real" array="False" size=""/>
+            <input variable="city"/>
+            <input variable="miles"/>
+            <input variable="gallons"/>
+            <assign variable="mpg" expression="miles/gallons"/>
+            <output expression="city" newline="True"/>
+            <output expression="miles" newline="True"/>
+            <output expression="mpg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

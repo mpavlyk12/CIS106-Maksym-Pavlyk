@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavly"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-19 06:15:19 PM"/>
+        <attribute name="created" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTk7MDY6MTA6NDQgUE07Mjg5OA=="/>
+        <attribute name="edited" value="cGF2bHk7TEFQVE9QLTU4VTVQRFVLOzIwMjMtMTEtMTk7MDY6MTU6MTkgUE07MTszMDEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="code" type="Real" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="L" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="J" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="code"/>
+            <input variable="hours"/>
+            <assign variable="code" expression="LAJ"/>
+            <assign variable="L" expression="25"/>
+            <assign variable="A" expression="30"/>
+            <assign variable="J" expression="50"/>
+            <assign variable="gross" expression="code * hours"/>
+            <output expression="name" newline="True"/>
+            <output expression="gross" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
