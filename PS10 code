@@ -1,0 +1,59 @@
+1.name = input()
+month = input()
+if month = Jan, Feb, March:
+    percent = 0.1
+if month = April, May, June:
+    percent = 0.15
+if month = July, August, September:
+    percent = 0.2
+if month = October, November, December:
+    percent = 0.25
+sales = sales * (1+percnt)
+print(f"{name} earned {sales:.2f} dollars.")
+
+2.length = float(input())
+width = float(input())
+height = float(input())
+square = (2 x length x width ) + (2 x length x height)  + (2 x width x height)
+gallons = square / 50
+print(gallons)
+
+3.make = input()
+model = input()
+electric =input(Y or N)
+msrp = float(input())
+if model = Accord:
+    percent = 0.1
+if model = Rav4:
+    percent = 0.15
+if model = electric:
+    percent = 0.3
+if model = else:
+    percent = 0.05
+sale= msrp - (msrp*percent)
+total= sale + (sale*0.07)
+print(total)
+
+4.name = input()
+miles = float(input())
+if miles => 30:
+    ticket = 12
+if miles = 20 to 29:
+    ticket = 10
+if miles = 10 to 19:
+    percent = 8
+if miles = else:
+    percent = 5 
+print(ticket)
+
+5.name = input()
+miles = float(input())
+if miles => 30:
+    ticket = 12
+if miles = 20 to 29:
+    ticket = 10
+if miles = 10 to 19:
+    percent = 8
+if miles = else:
+    percent = 5 
+print(ticket)
